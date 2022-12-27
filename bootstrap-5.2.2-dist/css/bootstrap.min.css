@@ -3953,6 +3953,9 @@ textarea.form-control-lg {
     background-color: rgb(56, 32, 90);
 
 }
+.vermelho {
+    color: red;
+}
 
 .texto {
     background-color: rgba(11, 8, 225, 0.3);
