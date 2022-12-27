@@ -93,7 +93,8 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    background-image: url("../../media/kassawpp.png");
+    background-size: cover;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
     
@@ -296,6 +297,13 @@ kbd {
 kbd kbd {
     padding: 0;
     font-size: 1em
+}
+
+.newCont {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
 }
 
 figure {
@@ -614,6 +622,7 @@ progress {
 .container,.container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
+    width: 100%;
     height: 50;
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
@@ -635,12 +644,10 @@ progress {
     --bs-gutter-y: 0;
     background-color: rgba(211,211,211,0.5);
     width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  justify-content: center;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto
 }
 
 @media (min-width:576px) {
@@ -3921,10 +3928,30 @@ textarea.form-control-lg {
 }
 
 .myContainer {
-    background-color: #513fec4f;	
-    justify-content: center;	
-    border-radius: 20px;
-    
+    background-color: rgb(26, 17, 44);		
+    border-radius: 5px;		
+    padding: 20px;	
+}
+
+.cor1 {
+    color: rgb(142, 95, 197);
+    background-color: rgb(142, 95, 197);
+}
+
+.cor2 {
+    color: rgb(108, 62, 152);
+    background-color: rgb(108, 62, 152);
+}
+
+.cor3 {
+    color: rgb(26, 17, 44);
+    background-color: rgb(26, 17, 44);
+}
+
+.cor4 {
+    color: rgb(56, 32, 90);
+    background-color: rgb(56, 32, 90);
+
 }
 
 .texto {
@@ -3949,8 +3976,22 @@ margin-top: 20px;
     max-height: 300px;
 }
 #intro {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
     text-align: center;
+    justify-content: center;
+}
+#runas {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 500px;
+}
+containerIntro {
+    height: 200px;
+    width: 200px;
 }
 #desc {
     background-color: rgb(41, 40, 40);
@@ -4570,7 +4611,11 @@ margin-top: 20px;
     --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
-
+.titulo {
+    background-color: black;
+    border-radius: 20px;
+    width: auto;
+}
 .card {
     --bs-card-spacer-y: 1rem;
     --bs-card-spacer-x: 1rem;
@@ -12327,15 +12372,6 @@ margin-top: 20px;
     width: 100%;
 }
 
-img {
-    width: auto;
-    max-width: 600px;
-    height: auto;
-    max-height: 600px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    
-}
 
 #containerTeste {
     float: left;
@@ -12345,4 +12381,52 @@ img {
     margin-top: 20px;
 }
 
+
+
+.sideBarWrapper {
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    color: #555;
+}
+
+.sideBarMenu{
+    margin-bottom: 10px;
+}
+
+.sideBarTitle{
+    font-size: 15px;
+    color: black;
+}
+
+.sideBarList{
+    list-style: none;
+    padding: 5px;
+}
+
+.sideBarListItem{
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sideBarListItem.active, .sideBarListItem:hover{
+    background-color: whitesmoke
+}
+
+.sideBarIcon{
+    margin-right: 5px;
+    font-size: 50px !important;
+}
+
+.logo {
+    position: absolute;
+    bottom: 70px;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /*# sourceMappingURL=bootstrap.min.css.map */
